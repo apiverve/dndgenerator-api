@@ -1,0 +1,90 @@
+openapi: 3.0.4
+info:
+  title: D&D Generator
+  description: D&D Generator creates random content for tabletop role-playing games including characters, NPCs, monsters, treasure, encounters, taverns, and quests.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/dndgenerator:
+    get:
+      summary: Generate D&D Content
+      description: D&D Generator creates random content for tabletop role-playing games including characters, NPCs, monsters, treasure, encounters, taverns, and quests.
+      operationId: dndgenerator
+      parameters:
+      - name: type
+        default: all
+        in: query
+        schema:
+          type: string
+        required: false
+        description: 'Content type: all, character, npc, monster, treasure, encounter, tavern, quest, name'
+        example: character
+      - name: count
+        default: '1'
+        in: query
+        schema:
+          type: number
+        required: false
+        description: Number of items to generate (1-10)
+        example: '1'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  type: character
+                  count: 1
+                  results:
+                    name: Galorblade
+                    race: Dragonborn
+                    class: Warlock
+                    level: 12
+                    background: Hermit
+                    alignment: True Neutral
+                    stats:
+                      strength: 10
+                      dexterity: 13
+                      constitution: 16
+                      intelligence: 16
+                      wisdom: 9
+                      charisma: 9
+                    hitPoints: 14
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
