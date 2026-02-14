@@ -15,7 +15,7 @@ const api = new dndgeneratorAPI({
 
 // Example query
 var query = {
-  type: "character",
+  type: "all",
   count: 1
 };
 
