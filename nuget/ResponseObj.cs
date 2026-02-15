@@ -6,7 +6,7 @@
 //
 //    var responseObj = ResponseObj.FromJson(jsonString);
 
-namespace APIVerve.API.D&DGenerator
+namespace APIVerve.API.DDGenerator
 {
     using System;
     using System.Collections.Generic;
