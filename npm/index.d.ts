@@ -7,7 +7,7 @@ declare module '@apiverve/dndgenerator' {
   export interface dndgeneratorResponse {
     status: string;
     error: string | null;
-    data: D&DGeneratorData;
+    data: DDGeneratorData;
     code?: number;
   }
 
