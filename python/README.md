@@ -44,7 +44,10 @@ from apiverve_ddgenerator.apiClient import DndgeneratorAPIClient
 # Initialize the client with your APIVerve API key
 api = DndgeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "type": "all", "count": 1 }
+query = {
+    "type": "all",
+    "count": 1
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "type": "all", "count": 1 }
+query = {
+    "type": "all",
+    "count": 1
+}
 ```
 
 ###### Simple Request
@@ -138,7 +144,10 @@ from apiverve_ddgenerator.apiClient import DndgeneratorAPIClient, DndgeneratorAP
 
 api = DndgeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "type": "all", "count": 1 }
+query = {
+    "type": "all",
+    "count": 1
+}
 
 try:
     result = api.execute(query)
@@ -159,7 +168,10 @@ from apiverve_ddgenerator.apiClient import DndgeneratorAPIClient, DndgeneratorAP
 
 api = DndgeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "type": "all", "count": 1 }
+query = {
+    "type": "all",
+    "count": 1
+}
 
 try:
     result = api.execute(query)
@@ -193,7 +205,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_ddgenerator.apiClient import DndgeneratorAPIClient, DndgeneratorAPIClientError
 
-query = { "type": "all", "count": 1 }
+query = {
+    "type": "all",
+    "count": 1
+}
 
 # Using context manager ensures proper cleanup
 with DndgeneratorAPIClient("[YOUR_API_KEY]") as api:
@@ -219,7 +234,10 @@ from apiverve_ddgenerator.apiClient import DndgeneratorAPIClient
 # Enable debug mode
 api = DndgeneratorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "type": "all", "count": 1 }
+query = {
+    "type": "all",
+    "count": 1
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -234,8 +252,12 @@ from apiverve_ddgenerator.apiClient import DndgeneratorAPIClient
 
 api = DndgeneratorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "type": "all",
+    "count": 1
+}
+
 try:
-    query = { "type": "all", "count": 1 }
     result = api.execute(query)
     print(result)
 finally:
