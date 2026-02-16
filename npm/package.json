@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/dndgenerator",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "D&D Generator creates random content for tabletop role-playing games including characters, NPCs, monsters, treasure, encounters, taverns, and quests.",
   "main": "index.js",
   "types": "index.d.ts",
