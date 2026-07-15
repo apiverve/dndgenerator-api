@@ -30,7 +30,12 @@ The D&amp;D Generator API provides a simple, reliable way to integrate d&amp;d g
 ```javascript
 async function callD&amp;DGeneratorAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/dndgenerator', {
+        const params = new URLSearchParams({
+            type: 'character',
+            count: 1
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/dndgenerator?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +55,7 @@ callD&amp;DGeneratorAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/dndgenerator?param=value" \
+curl -X GET "https://api.apiverve.com/v1/dndgenerator?type=character&count=1" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +155,7 @@ go get github.com/apiverve/dndgenerator-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +174,7 @@ go get github.com/apiverve/dndgenerator-api/go
 The D&amp;D Generator API is commonly used for:
 
 - **Web Applications** - Add d&amp;d generator features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with d&amp;d generator capabilities
 - **Data Pipelines** - Process and analyze data at scale
