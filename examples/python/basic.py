@@ -17,11 +17,14 @@ def call_dndgenerator_api():
     Make a GET request to the D&amp;D Generator API
     """
     try:
+        # Query parameters
+        params &#x3D; {&#x27;type&#x27;: &#x27;character&#x27;, &#x27;count&#x27;: 1}
+
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers)
+        response = requests.get(API_URL, headers=headers, params=params)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
