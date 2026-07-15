@@ -128,21 +128,21 @@ async function makeRequest() {
     "type": "character",
     "count": 1,
     "results": {
-      "name": "Galorblade",
-      "race": "Dragonborn",
+      "name": "Ashorshadow",
+      "race": "Elf",
       "class": "Warlock",
-      "level": 12,
-      "background": "Hermit",
-      "alignment": "True Neutral",
+      "level": 6,
+      "background": "Criminal",
+      "alignment": "Lawful Good",
       "stats": {
         "strength": 10,
-        "dexterity": 13,
-        "constitution": 16,
-        "intelligence": 16,
-        "wisdom": 9,
-        "charisma": 9
+        "dexterity": 12,
+        "constitution": 7,
+        "intelligence": 15,
+        "wisdom": 12,
+        "charisma": 10
       },
-      "hitPoints": 14
+      "hitPoints": 20
     }
   }
 }
