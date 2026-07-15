@@ -12,8 +12,13 @@ public class BasicExample {
         D&amp;DGeneratorAPIClient client = new D&amp;DGeneratorAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Execute the API request (no parameters required)
-            APIResponse response = client.execute(null);
+            // Query parameters
+            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
+        parameters.put(&quot;type&quot;, &quot;character&quot;);
+        parameters.put(&quot;count&quot;, 1);
+
+            // Execute the API request
+            APIResponse response = client.execute(parameters);
 
             // Check if the request was successful
             if (response.isSuccess()) {
