@@ -192,11 +192,46 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the D&amp;D Generator API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "type": "character",
+    "count": 1,
+    "results": {
+      "name": "Ashorshadow",
+      "race": "Elf",
+      "class": "Warlock",
+      "level": 6,
+      "background": "Criminal",
+      "alignment": "Lawful Good",
+      "stats": {
+        "strength": 10,
+        "dexterity": 12,
+        "constitution": 7,
+        "intelligence": 15,
+        "wisdom": 12,
+        "charisma": 10
+      },
+      "hitPoints": 20
+    }
+  }
 }
 ```
 
