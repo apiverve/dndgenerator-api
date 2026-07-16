@@ -20,6 +20,6 @@ namespace APIVerve.API.DDGenerator
         /// Number of items to generate
         /// </summary>
         [JsonProperty("count")]
-        public string Count { get; set; }
+        public int? Count { get; set; }
     }
 }
