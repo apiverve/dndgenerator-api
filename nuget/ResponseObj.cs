@@ -25,6 +25,9 @@ namespace APIVerve.API.DDGenerator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,7 +36,7 @@ namespace APIVerve.API.DDGenerator
         public string Type { get; set; }
 
         [JsonProperty("count")]
-        public long Count { get; set; }
+        public long? Count { get; set; }
 
         [JsonProperty("results")]
         public Results Results { get; set; }
@@ -51,7 +54,7 @@ namespace APIVerve.API.DDGenerator
         public string Class { get; set; }
 
         [JsonProperty("level")]
-        public long Level { get; set; }
+        public long? Level { get; set; }
 
         [JsonProperty("background")]
         public string Background { get; set; }
@@ -63,27 +66,39 @@ namespace APIVerve.API.DDGenerator
         public Stats Stats { get; set; }
 
         [JsonProperty("hitPoints")]
-        public long HitPoints { get; set; }
+        public long? HitPoints { get; set; }
     }
 
     public partial class Stats
     {
         [JsonProperty("strength")]
-        public long Strength { get; set; }
+        public long? Strength { get; set; }
 
         [JsonProperty("dexterity")]
-        public long Dexterity { get; set; }
+        public long? Dexterity { get; set; }
 
         [JsonProperty("constitution")]
-        public long Constitution { get; set; }
+        public long? Constitution { get; set; }
 
         [JsonProperty("intelligence")]
-        public long Intelligence { get; set; }
+        public long? Intelligence { get; set; }
 
         [JsonProperty("wisdom")]
-        public long Wisdom { get; set; }
+        public long? Wisdom { get; set; }
 
         [JsonProperty("charisma")]
-        public long Charisma { get; set; }
+        public long? Charisma { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
