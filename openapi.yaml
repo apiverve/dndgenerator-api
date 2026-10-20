@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/dndgenerator:
     get:
-      summary: Generate D&D Content
+      summary: D&D Generator
       description: Generate random D&D content by type
       operationId: dndgenerator
       parameters:
