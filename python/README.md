@@ -3,11 +3,10 @@ D&D Generator API
 
 D&D Generator creates random content for tabletop role-playing games including characters, NPCs, monsters, treasure, encounters, taverns, and quests.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [D&D Generator API](https://apiverve.com/marketplace/dndgenerator?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-ddgenerator.svg)](https://pypi.org/project/apiverve-ddgenerator/)
+
+This is a Python wrapper for the [D&D Generator API](https://apiverve.com/marketplace/dndgenerator?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-ddgenerator
 
 ## Configuration
 
-Before using the dndgenerator API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the D&D Generator API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -63,7 +62,7 @@ except Exception as e:
 
 ## Usage
 
-The D&D Generator API documentation is found here: [https://docs.apiverve.com/ref/dndgenerator](https://docs.apiverve.com/ref/dndgenerator?utm_source=pypi&utm_medium=readme).
+The D&D Generator API documentation is found here: [https://docs.apiverve.com/ref/dndgenerator](https://docs.apiverve.com/ref/dndgenerator?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -111,21 +110,21 @@ print(result)
     "type": "character",
     "count": 1,
     "results": {
-      "name": "Galorblade",
-      "race": "Dragonborn",
+      "name": "Ashorshadow",
+      "race": "Elf",
       "class": "Warlock",
-      "level": 12,
-      "background": "Hermit",
-      "alignment": "True Neutral",
+      "level": 6,
+      "background": "Criminal",
+      "alignment": "Lawful Good",
       "stats": {
         "strength": 10,
-        "dexterity": 13,
-        "constitution": 16,
-        "intelligence": 16,
-        "wisdom": 9,
-        "charisma": 9
+        "dexterity": 12,
+        "constitution": 7,
+        "intelligence": 15,
+        "wisdom": 12,
+        "charisma": 10
       },
-      "hitPoints": 14
+      "hitPoints": 20
     }
   }
 }
@@ -269,7 +268,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -280,12 +279,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
