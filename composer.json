@@ -1,7 +1,7 @@
 {
     "name": "apiverve/dndgenerator",
     "description": "D&D Generator creates random content for tabletop role-playing games including characters, NPCs, monsters, treasure, encounters, taverns, and quests.",
-    "version": "1.2.0",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -21,7 +21,7 @@
         "character generator",
         "npc generator"
     ],
-    "homepage": "https://apiverve.com/marketplace/dndgenerator?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/dndgenerator?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/dndgenerator",
