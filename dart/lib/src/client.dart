@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// D&D Generator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/dndgenerator?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/dndgenerator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [type] - Content type to generate
