@@ -1,6 +1,6 @@
 name: apiverve_dndgenerator
 description: "D&D Generator creates random content for tabletop role-playing games including characters, NPCs, monsters, treasure, encounters, taverns, and quests."
-version: 1.2.4
+version: 1.2.5
 homepage: https://apiverve.com/marketplace/dndgenerator?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/dndgenerator-api/tree/main/dart
 
